@@ -4,13 +4,78 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Camera Rental</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+  
+<body class="whole">
+  <section class="top">
+    <nav class="navi">
+      <ul>
+        <li><a href="index.html" class="navlink">Home</a></li>
+        <li><a href="rental.html" class="navlink"> Rental Services</a></li>
+        <li><a href="contact.html" class="navlink">Contact</a></li>
+      </ul>
+    </nav>
+    <h1 class="title" align="center">Camera Rental Request</h1>
+  </section>
+  
+  <div class="box">
+    <h2 style="padding-left: 20px;"><b>Avaiable Cameras</b></h2>
+    <center><table>
+      <tr class="theader">
+        <th>Image</th>
+        <th>Product</th>
+        <th>Description</th>
+        <th>Rental Cost</th>
+      </tr>
+      <tr>
+        <td><img src="https://sg.canon/media/image/2021/09/11/396760f4b5bc4d67afcbc2eb0ff11638_R3_frontSlant_lens.png" width="100" height="90"></td>
+        <td><b>Canon EOS R3</b></td>
+        <td>Best Professional sports camera with 24.1MP sensor</td>
+        <td>$50/day</td>
+      </tr>
+      <tr>
+        <td><img src="https://www.nikon.com.sg/media/wysiwyg/press-release/2023/2023-06-13/2-product-nikon-z9-firmware-june-2023-nikon-cameras-lenses-accessories.jpg" width="125" height="95"></td>
+        <td><b>Nikon Z9</b></td>
+        <td>Best all-round professional camera with 45.7mp sensor</td>
+        <td>$45/day</td>
+      </tr>
+      <tr>
+        <td><img src="https://www.lightpoint.info/images/myMedia/content/products/photo_camera/sony/sony-a1.jpg" width="90" height="90"></td>
+        <td><b>Sony A1</b></td>
+        <td>High-end camera with 50.1MP sensor</td>
+        <td>$60/day</td>
+      </tr>
+    </table> </center>
 
-<body>
-  Hello world
+    <h2 align="left" style="padding-left:20px;">Rent Camera</h2>
+    <h3 align="center">Select a Camera</h3>
+    <form align="center" class="form">
+      <select class="product" name="camera" id="camera">
+        <option>Canon EO3 R3</option>
+        <option>Nikon Z9</option>
+        <option>Sony A1</option>
+      </select>
+    </form>
+    <center> 
+    <div>
+      <h3><b>Rental Duration (in days):</b></h3>
+      <input class="quantity" placeholder="1" type="number" id="days" name="days" min="1" max="7">
+    </div>
+    <div>
+      <h3><b>Additionl Requests:</b></h3>
+      <textarea rows="4" class="request" placeholder="Enter any requests that you have. We will try to cater to your needs." type="text" id="request" name="request"></textarea>
+    </div>
+    <div>
+      <h3><b>Email:</b></h3>
+      <input class="email" placeholder="Key in your email address here" type="text" id="email" name="email">
+    </div>
+    <button type="submit" class="button"><b>Submit</b></button>
+    </center> 
+  </div>
   <script src="script.js"></script>
+  <footer class="bot"><p>@ 2023 Snap Professional Rental, Singapore</p></footer>
 </body>
 
 </html>
